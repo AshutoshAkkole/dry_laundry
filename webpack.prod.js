@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 module.exports = {
   entry: "./src/index.js",
@@ -9,10 +8,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "assets/[hash][ext]",
     clean: true
-  },
-  devServer: {
-    static: "./dist",
-    port: 9000,
   },
   module: {
     rules: [
@@ -36,8 +31,6 @@ module.exports = {
       chunks: "all",
       inject: true,
     }),
-    // turn only when you want to analyse bundle size
-    // new BundleAnalyzerPlugin({})
   ],
   optimization: {
     splitChunks: {

@@ -1,7 +1,6 @@
 // main logic for website let's go
 
-import * as style from "./index.css"
+import header from "./header/header.js"
 
-console.log("style", style.tempclass);
+header();
 
-console.log("Hello world")
