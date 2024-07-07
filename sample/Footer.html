@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: #3f3db1;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer .logo {
+            display: flex;
+            align-items: center;
+        }
+        .footer .logo img {
+            max-height: 80px;
+        }
+        .footer .contact, .footer .links, .footer .map {
+            flex: 1;
+            padding: 0 20px;
+        }
+        .footer .contact p, .footer .links a, .footer .contact a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer .links {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer .links a {
+            margin-bottom: 5px;
+        }
+        .footer .map img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="logo">
+            <img src="../src/assets/logo.svg" alt="Quality Dry-Cleaners Logo">
+        </div>
+        <div class="contact">
+            <p><strong>Contact Us</strong></p>
+            <p>Vaishnavi Apartment, near Modi Ganpati, Narayan Peth, Pune, Maharashtra 411030</p>
+            <p>Email: <a href="mailto:support@quality.com">support@quality.com</a></p>
+            <p>
+                <a href="#"><img src="icon1.png" alt="Icon 1"></a>
+                <a href="#"><img src="icon2.png" alt="Icon 2"></a>
+                <a href="#"><img src="icon3.png" alt="Icon 3"></a>
+                <a href="#"><img src="icon4.png" alt="Icon 4"></a>
+            </p>
+        </div>
+        <div class="links">
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Tips</a>
+        </div>
+        <div class="map">
+            <img src="map.png" alt="Map"> 
+        </div>
+    </footer>
+</body>
+</html>

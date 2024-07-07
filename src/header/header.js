@@ -1,7 +1,7 @@
 import * as headerCss from "./header.css";
 import logosvg from "../assets/logo.svg"
 
-const header = () => {
+const header = (root) => {
   const container = document.createElement("div");
 
   container.id = "headerContainer";
@@ -27,7 +27,7 @@ const header = () => {
         </div>
     </nav>`;
 
-    document.body.appendChild(container);
+    root.appendChild(container);
     
 };
 
