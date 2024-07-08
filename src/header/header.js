@@ -1,5 +1,5 @@
 import * as headerCss from "./header.css";
-import logosvg from "../assets/logo.svg"
+import logosvg from "../assets/logo.svg";
 
 const header = (root) => {
   const container = document.createElement("div");

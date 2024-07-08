@@ -7,7 +7,7 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "assets/[hash][ext]",
-    clean: true
+    clean: true,
   },
   module: {
     rules: [
@@ -20,8 +20,12 @@ module.exports = {
       },
       {
         test: /.(png|svg|jpg)$/,
-        type: "asset/resource"
-      }
+        type: "asset/resource",
+      },
+      {
+        test: /.(ttf)$/,
+        type: "asset/resource",
+      },
     ],
   },
   plugins: [
@@ -35,6 +39,6 @@ module.exports = {
   optimization: {
     splitChunks: {
       chunks: "all",
-    }
-  }
+    },
+  },
 };

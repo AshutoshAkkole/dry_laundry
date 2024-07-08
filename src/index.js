@@ -1,6 +1,7 @@
 // main logic for website let's go
 
-import header from "./header/header.js"
+import "./index.css";
+import header from "./header/header.js";
 import footer from "./footer/footer.js";
 import content from "./mainbody/content.js"
 

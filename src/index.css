@@ -1,4 +1,7 @@
-
-.tempclass {
-    color: rebeccapurple;
+/* import required font  */
+@font-face {
+    font-family: Righteous;
+    src: url(./fonts/Righteous-Regular.ttf);
+    font-style: normal;
+    font-weight: 600;
 }
