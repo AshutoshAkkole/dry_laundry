@@ -1,0 +1,21 @@
+.Imgcontainer {
+  width: 100%;
+  height: auto;
+}
+
+.serviceHeader {
+  color: #4543c5;
+  font-size: 70px;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: bold;
+  margin: 0;
+}
+
+/* grid to align the services */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
