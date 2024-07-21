@@ -1,9 +1,9 @@
-import * as typeofservieCss from "./serviceCard.css";
+import * as serviceCardCss from "./serviceCard.css";
 
-const typeofservie = (root, { svgData, title, bgColor = "#30A7FD" }) => {
+const serviceCard = (root, { svgData, title, bgColor = "#30A7FD" }) => {
   const container = document.createElement("div");
 
-  const { squareContainer } = typeofservieCss;
+  const { squareContainer } = serviceCardCss;
 
   container.innerHTML = `
     <img src="${svgData}" alt="${title}">
@@ -16,4 +16,4 @@ const typeofservie = (root, { svgData, title, bgColor = "#30A7FD" }) => {
   root.appendChild(container);
 };
 
-export default typeofservie;
+export default serviceCard;
