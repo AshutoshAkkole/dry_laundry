@@ -1,4 +1,4 @@
-import * as typeofservieCss from "./typeofservice.css";
+import * as typeofservieCss from "./serviceCard.css";
 
 const typeofservie = (root, { svgData, title, bgColor = "#30A7FD" }) => {
   const container = document.createElement("div");

@@ -1,6 +1,6 @@
 import serviceImg from "../../assets/serviceImg.svg";
 import * as serviceCss from "./services.css";
-import typeofservice from "../typeofservices/typeofservice";
+import typeofservice from "../serviceCard/serviceCard";
 import allservices from "./allservices";
 import { isEven } from "../utils";
 
