@@ -16,19 +16,17 @@ const header = (root) => {
             <p href="#">Quality Dry-Cleaners</p>
         </div>
         <ul class="${navlinks}">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Media</a></li>
-            <li><a href="#">Tips</a></li>
+            <li><a href="#home"  id="home" >Home</a></li>
+            <li><a href="#"  >About Us</a></li>
+            <li><a href="#service"  id="service" >Services</a></li>
+            <li><a href="#"  >Media</a></li>
+            <li><a href="#"  >Tips</a></li>
         </ul>
         <div class="${contactbutton}">
             <a href="#">Contact Us →</a>
         </div>
     </nav>`;
-
-    root.appendChild(container);
-    
+  root.appendChild(container);
 };
 
 export default header;
