@@ -1,11 +1,11 @@
 import * as footerCss from "./footer.css";
-import logosvg from "../assets/logoFooter.svg";
-import mapsvg from "../assets/map.svg";
-import location from "../assets/location.svg";
-import instagram from "../assets/instagram.svg";
-import facebook from "../assets/facebook.svg";
-import telegram from "../assets/telegram.svg";
-import email from "../assets/email.svg";
+import logosvg from "../../assets/logoFooter.svg";
+import mapsvg from "../../assets/map.svg";
+import location from "../../assets/location.svg";
+import instagram from "../../assets/instagram.svg";
+import facebook from "../../assets/facebook.svg";
+import telegram from "../../assets/telegram.svg";
+import email from "../../assets/email.svg";
 
 const footer = (root) => {
   const container = document.createElement("div");

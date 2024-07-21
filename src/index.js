@@ -1,9 +1,9 @@
 // main logic for website let's go
 
 import "./index.css";
-import header from "./header/header.js";
-import footer from "./footer/footer.js";
-import content from "./mainbody/content.js"
+import header from "./components/header/header.js";
+import footer from "./components/footer/footer.js";
+import content from "./components/content/content.js"
 
 const root = document.getElementById("root")
 
