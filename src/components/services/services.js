@@ -5,23 +5,7 @@ import allservices from "./allservices";
 import { isEven } from "../utils";
 import reviewPagination from "../reviewPagination/reviewPagination";
 import { individualReviews, industrialReviews} from "./reviewCards";
-
-
-const FeedbackHeader = (root, {title, description}) => {
-
-    const container = document.createElement("div");
-
-    container.style.textAlign = "center";
-
-    container.innerHTML = `
-    <h1> ${title} </h1>
-    <p> ${description} </p>
-    `
-
-    root.appendChild(container);
-}
-
-
+import { FeedbackHeader } from "../utils";
 
 const service = (root) => {
     const container = document.createElement("div");
@@ -45,9 +29,9 @@ const service = (root) => {
     
     container.appendChild(grid);
 
-    FeedbackHeader(container,{title:"Our Customer", description:"We have been working since 2004"})
+    FeedbackHeader(container,{title:"Our Customer", description:"We have been working since 2004"});
     reviewPagination(container, {reviewCards:individualReviews});
-    FeedbackHeader(container,{title:"Our Industry Clients", description:"We have been working since 2004"})
+    FeedbackHeader(container,{title:"Our Industry Clients", description:"We have been working since 2004"});
     reviewPagination(container, {reviewCards:industrialReviews});
 
 

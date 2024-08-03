@@ -1,0 +1,30 @@
+.category {
+    margin-bottom: 40px;
+}
+.category p {
+    color: #305f91;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.logos {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 10px;
+}
+.logos img {
+    max-width: 120px;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+}
+/* Hide scrollbar */
+.logos::-webkit-scrollbar {
+    display: none;
+}
+.logos {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
