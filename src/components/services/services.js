@@ -1,4 +1,4 @@
-import serviceImg from "../../assets/serviceImg.svg";
+import serviceImg from "../../../assets/serviceImg.svg";
 import * as serviceCss from "./services.css";
 import serviceCard from "../serviceCard/serviceCard";
 import allservices from "./allservices";

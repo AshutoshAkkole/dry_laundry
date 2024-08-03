@@ -1,9 +1,9 @@
-import dryCleaning from "../../assets/dryCleaning.svg";
-import saree from "../../assets/saree.svg";
-import washingmachine from "../../assets/washingMachine.svg";
-import weddingDress from "../../assets/weddingDress.svg";
-import shoes from "../../assets/shoes.svg"
-import curtain from "../../assets/curtain.svg"
+import dryCleaning from "../../../assets/dryCleaning.svg";
+import saree from "../../../assets/saree.svg";
+import washingmachine from "../../../assets/washingMachine.svg";
+import weddingDress from "../../../assets/weddingDress.svg";
+import shoes from "../../../assets/shoes.svg"
+import curtain from "../../../assets/curtain.svg"
 
 
 const services = [

@@ -1,4 +1,4 @@
-import noprofileUser from "../../assets/noProfileUser.svg"
+import noprofileUser from "../../../assets/noProfileUser.svg"
 
 export const individualReviews = [
     {

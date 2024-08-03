@@ -1,7 +1,7 @@
 import * as homeCss from "./home.css";
-import dryCleanlingAgent from "../../assets/dryCleaningAgent.svg";
-import whatsapp from "../../assets/whatsapp.svg";
-import Tshirt from "../../assets/Tshirt.svg";
+import dryCleanlingAgent from "../../../assets/dryCleaningAgent.svg";
+import whatsapp from "../../../assets/whatsapp.svg";
+import Tshirt from "../../../assets/Tshirt.svg";
 
 const home = (root) => {
   const container = document.createElement("div");
