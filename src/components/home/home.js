@@ -5,7 +5,7 @@ import { FeedbackHeader } from "../utils";
 import reviewPagination from "../reviewPagination/reviewPagination";
 import { individualReviews } from "./reviewCards";
 import carousel from "../carousel/carousel";
-
+import embeddedVideo from "../EmbeddedVideo/EmbeddedVideo";
 
 const home = (root) => {
   const container = document.createElement("div");
@@ -20,7 +20,7 @@ const home = (root) => {
     middle,
     leftPanel,
     rightPanel,
-    clientHeader
+    clientHeader,
   } = homeCss;
 
   container.classList.add([containerCss]);
@@ -62,13 +62,20 @@ const home = (root) => {
     </div>
      `;
 
-  FeedbackHeader(container,{title:"Our Esteemed Customers", description:"We have been working since 2004"});
-  reviewPagination(container, {reviewCards:individualReviews});
-  FeedbackHeader(container,{title:"Client", cssClass:clientHeader,description:""})
-  carousel(container, {title: "Hospitality"});
-  carousel(container, {title: "Healthcare"});
-  carousel(container, {title: "Government Institution"});
-
+  embeddedVideo(container);
+  FeedbackHeader(container, {
+    title: "Our Esteemed Customers",
+    description: "We have been working since 2004",
+  });
+  reviewPagination(container, { reviewCards: individualReviews });
+  FeedbackHeader(container, {
+    title: "Client",
+    cssClass: clientHeader,
+    description: "",
+  });
+  carousel(container, { title: "Hospitality" });
+  carousel(container, { title: "Healthcare" });
+  carousel(container, { title: "Government Institution" });
 
   root.appendChild(container);
 };
