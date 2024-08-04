@@ -17,7 +17,7 @@ const header = (root) => {
         </div>
         <ul class="${navlinks}">
             <li><a href="#home"  id="home" >Home</a></li>
-            <li><a href="#"  >About Us</a></li>
+            <li><a href="#aboutus" id="aboutus" >About Us</a></li>
             <li><a href="#service"  id="service" >Services</a></li>
             <li><a href="#media" id="media"  >Media</a></li>
             <li><a href="#Tips" id="Tips"  >Tips</a></li>
