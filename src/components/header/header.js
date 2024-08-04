@@ -19,8 +19,8 @@ const header = (root) => {
             <li><a href="#home"  id="home" >Home</a></li>
             <li><a href="#"  >About Us</a></li>
             <li><a href="#service"  id="service" >Services</a></li>
-            <li><a href="#"  >Media</a></li>
-            <li><a href="#"  >Tips</a></li>
+            <li><a href="#media" id="media"  >Media</a></li>
+            <li><a href="#Tips" id="Tips"  >Tips</a></li>
         </ul>
         <div class="${contactbutton}">
             <a href="#">Contact Us →</a>

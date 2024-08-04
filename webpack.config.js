@@ -24,15 +24,7 @@ module.exports = {
         ],
       },
       {
-        test: /(\.s(c|a)ss)$/,
-        use: [
-          { loader: "style-loader" },
-          { loader: "css-loader", options: { modules: true } },
-          { loader: "sass-loader"},
-        ],
-      },
-      {
-        test: /.(png|svg|jpg)$/,
+        test: /.(png|svg|jpg|jpeg)$/,
         type: "asset/resource",
       },
       {

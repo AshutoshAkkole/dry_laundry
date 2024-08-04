@@ -17,6 +17,7 @@ const home = document.getElementById("home");
 
 // ToDo: Find a better way to Route
 
+
 home.onclick = (e) => {
   const href = e.target.getAttribute("href");
   const root = document.getElementById("main");
@@ -26,6 +27,22 @@ home.onclick = (e) => {
 const service = document.getElementById("service");
 
 service.onclick = (e) => {
+  const href = e.target.getAttribute("href");
+  const root = document.getElementById("main");
+  content(root, href.substring(1));
+};
+
+const Tips = document.getElementById("Tips");
+
+Tips.onclick = (e) => {
+  const href = e.target.getAttribute("href");
+  const root = document.getElementById("main");
+  content(root, href.substring(1));
+};
+
+const media = document.getElementById("media");
+
+media.onclick = (e) => {
   const href = e.target.getAttribute("href");
   const root = document.getElementById("main");
   content(root, href.substring(1));

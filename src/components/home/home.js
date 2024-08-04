@@ -1,4 +1,4 @@
-import * as homeCss from "./home.scss";
+import * as homeCss from "./home.css";
 import dryCleanlingAgent from "../../../assets/home.svg";
 import whatsapp from "../../../assets/whatsapp.svg";
 import { FeedbackHeader } from "../utils";
