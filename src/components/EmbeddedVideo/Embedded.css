@@ -19,6 +19,8 @@ color: #ffffff;
 
 .textContainer {
     max-width: 45%;
+    font-family: Poppins;
+    color: white;
 }
 
 .textContainer h3 {

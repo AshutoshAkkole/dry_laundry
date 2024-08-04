@@ -1,5 +1,5 @@
 
-import * as embeddedVideoCss from "./embedded.css";
+import * as embeddedVideoCss from "./Embedded.css";
 
 
 const embeddedVideo = (root) => {
