@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #d6eaf8;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: stretch;
+            height: 100vh;
+        }
+
+        .left-panel {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .right-panel {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            gap: 1px;
+        }
+
+        .right-panel div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #eee;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .left-panel {
+                height: 50vh;
+            }
+
+            .right-panel {
+                height: 50vh;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>Free Pickup* All Over Pune</h1>
+        </div>
+        <div class="right-panel">
+            <div>
+                <h2>20,000+</h2>
+                <p>Happy Customers</p>
+            </div>
+            <div>
+                <h2>10+</h2>
+                <p>Years of experience with proud</p>
+            </div>
+            <div>
+                <h2>20+</h2>
+                <p>Years of Experience</p>
+            </div>
+            <div>
+                <h2>150+</h2>
+                <p>Expert Team</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

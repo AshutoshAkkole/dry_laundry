@@ -1,0 +1,43 @@
+.footer {
+    background-color: #3f3db1;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .logo {
+    display: flex;
+    align-items: center;
+}
+.footer .logo img {
+    max-height: 180px;
+    display: block;
+    margin: auto;
+}
+.footer .contact, .footer .links, .footer .map {
+    padding: 0 20px;
+}
+.footer .contact p, .footer .links a, .footer .contact a {
+    color: white;
+    text-decoration: none;
+    margin-top: 0;
+}
+.footer .links {
+    display: flex;
+    flex-direction: column;
+}
+.footer .links a {
+    margin-bottom: 5px;
+}
+.footer .map img {
+    width: 100%;
+    border-radius: 10px;
+}
+.flex{
+    display: flex;
+    align-items: start;
+}
+.flex a {
+    margin-right: 1rem;
+}

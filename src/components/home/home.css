@@ -1,0 +1,126 @@
+.containerCss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #B4E7F2;
+}
+
+.heroSection{
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heroText {
+    max-width: 400px;
+}
+
+.heroText h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.heroText h1 .highlight {
+    color: #5353f7;
+}
+
+.heroText p {
+    color: #777;
+    margin: 10px 0;
+}
+
+.heroButton {
+    display: block;
+    width: 175px;
+    padding: 10px 20px;
+    background-color: #5353f7;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 3rem;
+
+}
+
+.heroImage img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* middle section  */
+
+
+.middle {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+.leftPanel {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.rightPanel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    gap: 1px;
+}
+
+.rightPanel div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    padding: 20px;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leftPanel {
+        height: 50vh;
+    }
+
+    .rightPanel {
+        height: 50vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+.clientHeader {
+    color: #305f91;
+    border-bottom: 3px solid #305f91;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin: 0 0 20px 0;
+    width: 100%;
+}

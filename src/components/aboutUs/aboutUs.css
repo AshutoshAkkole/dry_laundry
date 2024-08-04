@@ -1,0 +1,70 @@
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    color: black;
+    background-color: #3498db;
+}
+.aboutUsImgClass {
+    width: 100%;
+    height: auto;
+}
+.textBlock {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.textBlock h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.textBlock p {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+.textBlock button {
+    background-color: #5d5fef;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.textBlock button:hover {
+    background-color: #3a3ed0;
+}
+
+
+.middleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #B4E7F2;
+}
+
+.image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 20px;
+}
+.text {
+    flex: 2;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.text p {
+    margin: 0 0 10px;
+}

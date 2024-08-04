@@ -1,0 +1,33 @@
+.reviewCard {
+    background-color: white;
+    border: 10px solid #3EC3FF;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 2rem; */
+}
+
+.profileImage {
+    width: 50px;
+    height: 50px;
+    /* border-radius: 50%; */
+    margin-bottom: 10px;
+}
+
+.name {
+    margin: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.stars {
+    color: gold;
+    margin: 10px 0;
+}
+
+.reviewText {
+    font-size: 14px;
+    color: #555;
+}
