@@ -23,7 +23,7 @@ const header = (root) => {
             <li><a href="#Tips" id="Tips"  >Tips</a></li>
         </ul>
         <div class="${contactbutton}">
-            <a href="#">Contact Us →</a>
+            <a href="tel:+919890000175">Contact Us →</a>
         </div>
     </nav>`;
   root.appendChild(container);

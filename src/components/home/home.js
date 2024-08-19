@@ -31,7 +31,7 @@ const home = (root) => {
             Relax! We are programmed <span class="${highlight}">to clean</span>
           </h1>
           <p>Friendly, Fast, and Efficient service is just a phone call away</p>
-          <a href="#" class="${heroButton}"><img src="${whatsapp}" /> </a>
+          <a href="https://wa.me/+919890000175?text=Hello%2C%20I%20want%20to%20use%20dry%20cleaning%20service" target="_blank" class="${heroButton}"><img src="${whatsapp}" /> </a>
         </div>
         <div class="${heroImage}">
           <img src="${dryCleanlingAgent}" alt="Cleaning Service" />
