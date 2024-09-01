@@ -6,7 +6,7 @@ const header = (root) => {
 
   container.id = "headerContainer";
 
-  const { navbar, logo, navlinks, contactbutton, imageWrapper } = headerCss;
+  const { navbar, logo, navlinks, contactbutton, imageWrapper, menuToggle, show } = headerCss;
 
   container.innerHTML = `<nav class="${navbar}">
         <div class="${logo}">
@@ -15,18 +15,40 @@ const header = (root) => {
             </div>
             <p href="#">Quality Dry-Cleaners</p>
         </div>
-        <ul class="${navlinks}">
+        <ul id = "navlinks" class="${navlinks}">
             <li><a href="#home"  id="home" >Home</a></li>
             <li><a href="#aboutus" id="aboutus" >About Us</a></li>
             <li><a href="#service"  id="service" >Services</a></li>
             <li><a href="#media" id="media"  >Media</a></li>
             <li><a href="#Tips" id="Tips"  >Tips</a></li>
+            <li class="${contactbutton}">
+                <a href="tel:+919890000175">Contact Us →</a>
+            </li>
         </ul>
-        <div class="${contactbutton}">
-            <a href="tel:+919890000175">Contact Us →</a>
-        </div>
+        <button id = "menuToggle" class="${menuToggle}" aria-label="Menu Toggle">&#9776;</button>
     </nav>`;
-  root.appendChild(container);
+  
+
+    window.onload = function() {
+        const menuToggle = document.querySelector('#menuToggle');
+        const navLinks = document.querySelector('#navlinks');
+        const navItems = document.querySelectorAll('#navlinks li a');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle(show);
+        });
+
+        navItems.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove(show);
+            });
+        });
+    };
+
+    root.appendChild(container);
+
 };
+
+
 
 export default header;
