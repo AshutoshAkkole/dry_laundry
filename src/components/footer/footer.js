@@ -26,12 +26,12 @@ const footer = (root) => {
             <p>Vaishnavi Apartment, near Modi Ganpati, Narayan Peth, Pune, Maharashtra 411030</p>
             </div>
             <div class="${flex}">
-            <a href="mailto:support@quality.com"><img src="${email}" alt="email"></a>
-            <p>Email: <a href="mailto:support@quality.com">support@quality.com</a></p>
+            <a href="mailto:nikhilb01042@gmail.com"><img src="${email}" alt="email"></a>
+            <p>Email: <a href="mailto:nikhilb01042@gmail.com">nikhilb01042@gmail.com</a></p>
             </div>
             <p>
                 <a href="#"><img src="${facebook}" alt="facebook"></a>
-                <a href="#"><img src="${instagram}" alt="instagram"></a>
+                <a href="https://www.instagram.com/quality_dry_cleaner" target="_blank"><img src="${instagram}" alt="instagram"></a>
             </p>
         </div>
         <div class="${links}">
