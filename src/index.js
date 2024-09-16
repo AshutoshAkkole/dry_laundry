@@ -18,6 +18,10 @@ const service = document.getElementById("service");
 const Tips = document.getElementById("Tips");
 const media = document.getElementById("media");
 const aboutUs = document.getElementById("aboutus");
+const faboutUs = document.getElementById("f-aboutus");
+const fservices = document.getElementById("f-services");
+const ftips = document.getElementById("f-tips");
+
 
 const Route = (e) => {
   const href = e.target.getAttribute("href");
@@ -32,3 +36,6 @@ service.onclick = (e) => Route(e);
 Tips.onclick = (e) => Route(e);
 media.onclick = (e) => Route(e);
 aboutUs.onclick = (e) => Route(e);
+faboutUs.onclick = (e) => Route(e);
+fservices.onclick = (e) => Route(e);
+ftips.onclick = (e) => Route(e);
