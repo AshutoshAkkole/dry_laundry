@@ -39,3 +39,10 @@ aboutUs.onclick = (e) => Route(e);
 faboutUs.onclick = (e) => Route(e);
 fservices.onclick = (e) => Route(e);
 ftips.onclick = (e) => Route(e);
+
+// manages changes by urls
+window.addEventListener('hashchange', function () {
+  const hash = this.location.hash;
+  const root = document.getElementById("main");
+  content(root, hash.substring(1));
+});
