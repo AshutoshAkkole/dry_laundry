@@ -9,6 +9,19 @@ import client8 from "../../../assets/client8.svg";
 import client9 from "../../../assets/client9.svg";
 import client10 from "../../../assets/client10.svg";
 
-const clients = [client1, client2, client3, client4, client5, client6, client7, client8, client9, client10];
+const healthCare = [client10];
 
-export default clients;
+const localBrands = [
+  client2,
+  client1,
+  client3,
+  client4,
+  client5,
+  client6,
+  client7,
+  client8,
+];
+
+const Hotels = [client9];
+
+export default { healthCare, localBrands, Hotels };

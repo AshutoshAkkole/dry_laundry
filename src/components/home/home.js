@@ -74,9 +74,9 @@ const home = (root) => {
     cssClass: clientHeader,
     description: "",
   });
-  carousel(container, { title: "Hospitality", images: clients });
-  carousel(container, { title: "Healthcare", images: clients });
-  carousel(container, { title: "Government Institution", images: clients });
+  carousel(container, { title: "Healthcare", images: clients.healthCare });
+  carousel(container, { title: "Local Brands", images: clients.localBrands });
+  carousel(container, { title: "Hotels", images: clients.Hotels });
 
   root.appendChild(container);
 };

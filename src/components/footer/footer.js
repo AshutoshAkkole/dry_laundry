@@ -22,7 +22,7 @@ const footer = (root) => {
         <div class="${contact}">
             <p><strong>Contact Us</strong></p>
             <div class="${flex}">
-            <a href="https://maps.app.goo.gl/ZsYn8krDGZkU2szo7" target="_blank"><img src="${location}" alt="location"></a>
+            <a href="https://maps.app.goo.gl/r4bfoCh6zrpybwCo9" target="_blank"><img src="${location}" alt="location"></a>
             <p>Vaishnavi Apartment, near Modi Ganpati, Narayan Peth, Pune, Maharashtra 411030</p>
             </div>
             <div class="${flex}">
@@ -40,7 +40,7 @@ const footer = (root) => {
             <a id="f-tips" href="#Tips">Tips</a>
         </div>
         <div class="${map}">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1892.338496309646!2d73.8686392!3d18.4529693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb4943634b4f%3A0x9e0f34e192156fdd!2sVaishnavi!5e0!3m2!1sen!2sin!4v1726476953066!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.3053438670017!2d73.84835570000001!3d18.515098800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1d4629e2275%3A0xc82e391458e9609f!2sQUALITY%20DRY%20CLEANERS!5e0!3m2!1sen!2sin!4v1726572559531!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>`;
 
