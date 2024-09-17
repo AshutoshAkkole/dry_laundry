@@ -64,6 +64,6 @@ button:hover {
 @media (max-width: 426px) {
 
     .videoContainer iframe {
-        width: 350px;
+        width: 340px;
     }
 }
