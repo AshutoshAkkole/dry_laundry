@@ -1,7 +1,6 @@
 
 import * as embeddedVideoCss from "./Embedded.css";
 
-
 const embeddedVideo = (root) => {
 
     const container = document.createElement("div");
@@ -20,7 +19,7 @@ const embeddedVideo = (root) => {
                 <li>World Class Set Up</li>
                 <li>Premium/ Luxury Dry Cleaner</li>
             </ul>
-            <button>Read More</button>
+            <button onclick = 'navigateToAboutus()'>Read More</button>
         </div>
         <div class="${videoContainer}">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/FAMXcalpM1o?si=gpNNRB9ll5ueaNLO" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

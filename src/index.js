@@ -4,6 +4,7 @@ import "./index.css";
 import header from "./components/header/header.js";
 import footer from "./components/footer/footer.js";
 import content from "./components/content/content.js";
+import { navigateToAboutus } from "./constants.js";
 
 const head = document.getElementById("header");
 const root = document.getElementById("main");
@@ -46,3 +47,6 @@ window.addEventListener('hashchange', function () {
   const root = document.getElementById("main");
   content(root, hash.substring(1));
 });
+
+// global function used in html
+window.navigateToAboutus = navigateToAboutus;
