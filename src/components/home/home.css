@@ -40,7 +40,7 @@
 
 .heroButton {
     display: block;
-    width: 175px;
+    /* width: 175px; */
     padding: 10px 20px;
     background-color: #5353f7;
     color: white;
@@ -103,6 +103,23 @@
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+    }
+
+    .middle {
+        flex-direction: column;
+    }
+
+    .heroText h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .heroButton {
+        width: 100px;
+    }
+
+    .heroButton img {
+        width: 40px;
     }
 
     .leftPanel {

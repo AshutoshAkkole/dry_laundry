@@ -13,8 +13,9 @@ body {
 }
 
 .logo {
-    margin-right: auto; /* Pushes the logo to the left corner */
+    /* margin-right: auto; Pushes the logo to the left corner */
     display: flex;
+    align-items: center;
 }
 
 .logo p {
@@ -47,12 +48,53 @@ body {
 .contactbutton a {
     text-decoration: none;
     font-size: 16px;
-    color: #fff;
+    color: white !important;
     background-color: #4a47ff;
     padding: 10px 20px;
     border-radius: 2px;
 }
 
-.imageWrapper{
-     margin-right: 1rem;
+.imageWrapper img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
 }
+
+ /* hamburger menu */
+.menuToggle {
+    display: none;
+}
+
+@media (max-width: 906px) {
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 20px;
+        z-index: 10;
+    }
+
+    .logo p {
+        font-size: inherit;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .menuToggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    
+}
+
+

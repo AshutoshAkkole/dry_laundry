@@ -22,7 +22,7 @@ const aboutUs = (root) => {
             <h1>About Us</h1>
             <p>PROFESSIONAL LAUNDRY SERVICE</p>
             <p>Best Laundry And Dry Cleaning Service</p>
-            <button>READ MORE</button>
+            <button onclick="navigateToAboutus()">READ MORE</button>
         </div>
         <div class="${middleContainer}">
             <div class="${image}">

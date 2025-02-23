@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.imageWrapper img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.contactbutton a {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 20px;
+        z-index: 10;
+    }
+
+    .navlinks.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .contactbutton {
+        display: none; /* Hide on mobile or integrate into dropdown if needed */
+    }
+}
+
+/* Desktop Menu Button Hidden */
+.menu-toggle {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <div class="imageWrapper">
+                <img src="${logosvg}" alt="Logo">
+            </div>
+            <p>Quality Dry-Cleaners</p>
+        </div>
+        <ul class="navlinks">
+            <li><a href="#home" id="home">Home</a></li>
+            <li><a href="#aboutus" id="aboutus">About Us</a></li>
+            <li><a href="#service" id="service">Services</a></li>
+            <li><a href="#media" id="media">Media</a></li>
+            <li><a href="#Tips" id="Tips">Tips</a></li>
+        </ul>
+        <div class="contactbutton">
+            <a href="tel:+919890000175">Contact Us →</a>
+        </div>
+        <button class="menu-toggle" aria-label="Menu Toggle">&#9776;</button>
+    </nav>
+    
+</body>
+</html>
+
+
+
+

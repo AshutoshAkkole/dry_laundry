@@ -6,6 +6,7 @@ import reviewPagination from "../reviewPagination/reviewPagination";
 import { individualReviews } from "./reviewCards";
 import carousel from "../carousel/carousel";
 import embeddedVideo from "../EmbeddedVideo/EmbeddedVideo";
+import clients from "./clients";
 
 const home = (root) => {
   const container = document.createElement("div");
@@ -73,9 +74,9 @@ const home = (root) => {
     cssClass: clientHeader,
     description: "",
   });
-  carousel(container, { title: "Hospitality" });
-  carousel(container, { title: "Healthcare" });
-  carousel(container, { title: "Government Institution" });
+  carousel(container, { title: "Healthcare", images: clients.healthCare });
+  carousel(container, { title: "Local Brands", images: clients.localBrands });
+  carousel(container, { title: "Hotels", images: clients.Hotels });
 
   root.appendChild(container);
 };
